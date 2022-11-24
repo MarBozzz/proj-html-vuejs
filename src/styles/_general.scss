@@ -1,0 +1,17 @@
+@use './partials/vars' as *;
+@use './partials/mixins' as *;
+
+//npm i bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+// npm i "@fontsource/poppins" 
+@import 'node_modules/@fontsource/poppins/index.css';
+
+
+body {
+  font-family: $main-font;
+  background-color: $main-color;
+  min-height: 100vh;
+  color: white;
+  margin: 0 auto;
+}

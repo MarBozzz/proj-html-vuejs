@@ -1,7 +1,6 @@
 <script>
 export default {
   name : 'AppJumbotron',
-  
 }
 </script>
 
@@ -9,7 +8,7 @@ export default {
 <template>
   <div class="jumbotron">
 
-    HTML JUMBOTRON
+    
   </div>
 </template>
 
@@ -18,7 +17,7 @@ export default {
 @use '../styles/partials/mixins' as *;
 
 .jumbotron {
-  min-height: 300px;
+  height: 100vh;
   background-color: dimgrey;
 }
 

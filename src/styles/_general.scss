@@ -7,6 +7,9 @@
 // npm i "@fontsource/poppins" 
 @import 'node_modules/@fontsource/poppins/index.css';
 
+//npm i @fortawesome/fontawesome-free
+@import 'node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+
 
 body {
   font-family: $main-font;
@@ -14,4 +17,14 @@ body {
   min-height: 100vh;
   color: white;
   margin: 0 auto;
+}
+
+.mb-container {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.mb-btn {
+  width: 150px;
+  height: 50px;
 }

@@ -7,14 +7,22 @@ export default {
 
 <template>
   <section>
-    StatsSection
+    <div class="box left"></div>
+    <div class="box right"></div>
   </section>
 </template>
 
 
 <style lang="scss" scoped>
+@use '../../styles/partials/vars' as *;
+@use '../../styles/partials/mixins' as *;
+
 section {
-  min-height: 100px;
-  background-color: lightblue;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #F9F9F9;
+  .box {
+    width: 46%;
+  }
 }
 </style>

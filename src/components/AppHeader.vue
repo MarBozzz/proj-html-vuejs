@@ -61,7 +61,8 @@ export default {
       <div class="header-right">
         <!-- <a class="btn" href="#"></a> -->
         <!-- I button saranno sostituiti con una mixin -->
-        <button class="mb-btn btn-warning mx-3">Purchase</button>
+        <!-- <button class="mb-btn btn-warning mx-3">Purchase</button> -->
+        
         <i class="fa-solid fa-magnifying-glass px-3"></i>
       </div>
     </div>
@@ -79,6 +80,9 @@ header {
     background-color: #3D3D3D;
     span {
       font-size: .8rem;
+    }
+    .header-right {
+      @include button(main-button);
     }
   }
   .lower-header {
@@ -102,6 +106,11 @@ header {
             }
           }
         }
+      }
+    }
+    .header-right{
+      i {
+        color: $main-color
       }
     }
   }

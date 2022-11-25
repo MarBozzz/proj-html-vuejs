@@ -1,0 +1,12 @@
+@mixin button($type: ''){
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid black;
+
+  @if $type =='main-button'{
+    background-color: green;
+  } @else if $type =='black-button' {
+    background-color: black;
+  }
+}

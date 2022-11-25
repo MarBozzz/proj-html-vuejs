@@ -7,15 +7,17 @@
 // npm i "@fontsource/poppins" 
 @import 'node_modules/@fontsource/poppins/index.css';
 
+// npm i "@fontsource/ubuntu"
+@import 'node_modules/@fontsource/ubuntu/index.css';
+
 //npm i @fortawesome/fontawesome-free
 @import 'node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
 
 body {
   font-family: $main-font;
-  background-color: $main-color;
   min-height: 100vh;
-  color: white;
+  color: black;
   margin: 0 auto;
 }
 
@@ -23,8 +25,20 @@ body {
   width: 83%;
   margin: 0 auto;
 }
-
+/*
 .mb-btn {
   width: 150px;
   height: 50px;
+}*/
+
+h1 {
+  font-size: 4.8rem;
+}
+
+.hchangecolor {
+  color: $main-color;
+}
+
+img {
+  max-width: 100%;
 }

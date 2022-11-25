@@ -29,7 +29,6 @@ export default {
 
 <template>
   <main>
-    HTML MAIN
     <ToolsSection />
     <MissionsSection />
     <PastProjectsSection />

@@ -96,7 +96,6 @@ header {
     .header-center {
       nav {
         ul {
-          list-style: none;
           li {
             padding: 1rem;
             text-transform: uppercase;

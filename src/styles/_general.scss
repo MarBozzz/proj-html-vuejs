@@ -35,10 +35,18 @@ h1 {
   font-size: 4.8rem;
 }
 
+h2 {
+  font-size: 3.5rem;
+}
+
 .hchangecolor {
   color: $main-color;
 }
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
 }

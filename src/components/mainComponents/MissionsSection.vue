@@ -13,13 +13,13 @@ export default {
     </div>
 
     <div class="text-container">
-          <h2>
-            Learn more about our <span class="hchangecolor">missions</span>
-          </h2>
-          SEPARATOR
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quia inventore, obcaecati excepturi similique optio necessitatibus beatae aliquid nostrum quisquam iusto, reiciendis corrupti neque maxime velit soluta quidem, incidunt in. Aliquid ab, quis ipsam eius numquam illo accusantium aut.</p>
-          BUTTON - box shadow
-        </div>
+      <h2>
+        Learn more about our <span class="hchangecolor">missions</span>
+      </h2>
+      SEPARATOR
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quia inventore, obcaecati excepturi similique optio necessitatibus beatae aliquid nostrum quisquam iusto, reiciendis corrupti neque maxime velit soluta quidem, incidunt in. Aliquid ab, quis ipsam eius numquam illo accusantium aut.</p>
+      BUTTON - box shadow
+    </div>
   </section>
 </template>
 

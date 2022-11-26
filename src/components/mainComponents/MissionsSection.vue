@@ -9,7 +9,8 @@ export default {
   <section class="d-flex">
 
     <div class="images-container">
-      2 photo in position rel/abs + box shadow
+      <img src="../../assets/images/busy-architect-PYVKWM4-1024x872.jpg" alt="Busy Architect">
+      <img src="../../assets/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg" alt="Business woman">
     </div>
 
     <div class="text-container">

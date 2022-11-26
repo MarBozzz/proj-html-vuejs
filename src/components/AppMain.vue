@@ -22,6 +22,11 @@ export default {
     NewsBlogSection,
     CallToActionSection,
     OurPartnersSection
+  },
+  data() {
+    return {
+      //
+    }
   }
 }
 </script>

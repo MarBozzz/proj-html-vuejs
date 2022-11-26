@@ -105,7 +105,13 @@ header {
     .header-right{
       .btn {
         @include button(main-button);
-        background: $scale-background-main-color
+        background: $scale-background-main-color;
+        box-shadow: 2px 2px 10px $main-color;
+      }
+      .btn:hover {
+        @include button(main-button);
+        background: $scale-black-color;
+        box-shadow: none;
       }
       i {
         color: $main-color;

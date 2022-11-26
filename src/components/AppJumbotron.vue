@@ -53,8 +53,8 @@ export default {
           <div class="segment three"></div>
         </div>
 
-        <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, aperiam dolores. Ad, sit. Qui porro blanditiis temporibus voluptatibus voluptatem quisquam eos dolore illo velit error aspernatur culpa consectetur enim incidunt voluptatum pariatur quasi omnis sequi, dicta dignissimos accusantium facere ipsum.</p>
-        <a @click="provaClick()" class="btn" href="#">Read more</a>
+        <p class="py-5">Sit amet consectetur adipisicing elit. Iusto, aperiam dolores. Ad, sit. Qui porro blanditiis temporibus voluptatibus voluptatem quisquam eos dolore illo velit error aspernatur culpa consectetur enim incidunt voluptatum pariatur quasi omnis sequi, dicta dignissimos accusantium facere ipsum.</p>
+        <a class="btn" href="#">Read more</a>
       </div>
       <div class="swipe-controls w-50 d-flex justify-content-between py-5">
         <h4>Facebook - Instagram - Youtube - Twitter</h4>
@@ -63,8 +63,10 @@ export default {
           <button @click="changeImg(0)" 
           :class="{'active' : isClicked}"
           class="btn active" input type="radio" name="swipe" id="0">01</button>
-          <button @click="changeImg(1)" :class="{'active' : isClicked}" class="btn" input type="radio" name="swipe" id="1">02</button>
-          <button @click="changeImg(2)" :class="{'active' : isClicked}" class="btn" input type="radio" name="swipe" id="2">03</button>
+          <button @click="changeImg(1)" :class="{'active' : isClicked}" 
+          class="btn" input type="radio" name="swipe" id="1">02</button>
+          <button @click="changeImg(2)" :class="{'active' : isClicked}" 
+          class="btn" input type="radio" name="swipe" id="2">03</button>
         </div>
 
       </div>
@@ -88,11 +90,12 @@ export default {
 
 .jumbotron {
   height: 105vh;
+  display: block;
   background-color: #F9F9F9;
   font-family: "Ubuntu", sans-serif; 
   overflow: hidden;
-  padding-bottom: 225px;
-  .mb-container {
+  .wrapper {
+    .mb-container {
     .text-container {
     width: 40%;
     h5 {
@@ -125,10 +128,16 @@ export default {
       } 
     }
     .btn {
-          @include button(main-button);
-          background: $scale-black-color
-        }
+        @include button(main-button);
+        background: $scale-background-main-color;
+        box-shadow: 2px 2px 10px $main-color;
     }
+    .btn:hover {
+      @include button(main-button);
+      background: $scale-black-color;
+      box-shadow: none;
+    }
+  }
     .swipe-controls {
       .selector {
         z-index: 999;
@@ -152,7 +161,6 @@ export default {
       }
     }
   }
-  
   .image-container {
     top: 0;
     right: 0;
@@ -163,6 +171,7 @@ export default {
       display: inline-block;
       transform: translate(+22%, -13%);
     }
+  }
   }
 }
 

@@ -1,3 +1,4 @@
+$main-font : "Poppins", sans-serif;
 
 $main-color: #00D9A6;
 
@@ -5,7 +6,6 @@ $scale-main-color: linear-gradient(0.25turn, #99E15E, #00D9A6);
 $scale-main-color-reverse: linear-gradient(0.25turn, #00D9A6, #99E15E);
 
 $scale-black-color: linear-gradient(0.25turn, #595959, #000000);
-
 $scale-slider-color: linear-gradient(0.25turn, #595959, #2E2E2E);
 
 
@@ -13,7 +13,8 @@ $scale-slider-color: linear-gradient(0.25turn, #595959, #2E2E2E);
 
 $scale-background-main-color: linear-gradient(0.25turn, #99E15E, #00D9A6);
 
-//card hover
+//card hover 45°
 $scale-cards-background-main-color-reverse: linear-gradient(45deg, #00D9A6, #99E15E);
 
-$main-font : "Poppins", sans-serif;
+//mission photo layover 45°
+$scale-background-main-color: linear-gradient(45deg, rgba(153, 225, 94, 0.85), rgb(0, 217, 166, 0.85));

@@ -9,7 +9,7 @@ export default {
   <section>
     <div class="box left">
       <img src="../../assets/images/person-with-long-curly-hair-PZ99QM2-2x.jpg" alt="person-with-long-curly-hair">
-      <div class="layer d-flex flex-column justify-content-center align-items-center">
+      <div class="layover d-flex flex-column justify-content-center align-items-center">
         <h2>280</h2>
         <h4 class="py-4">Projects</h4>
         <div class="lower-stats d-flex justify-content-between align-items-center">
@@ -78,7 +78,7 @@ section {
       object-fit: cover;
       border-radius: 10px;
     }
-    .layer {
+    .layover {
       position: absolute;
       left: 0;
       top: 0;

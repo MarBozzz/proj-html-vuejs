@@ -43,33 +43,36 @@ export default {
   <div class="jumbotron">
     <div class="wrapper position-relative">
       <div class="mb-container">
-      <div class="text-container">
-        <h5 class="">17 years of experience</h5>
-        <h1 class="py-2">Focus on Your&ensp;<span class="hchangecolor">Business</span></h1>
+        <div class="text-container">
+          <h5 class="">17 years of experience</h5>
+          <h1 class="py-2">Focus on Your&ensp;<span class="hchangecolor">Business</span></h1>
 
-        <div class="styled-separator-line">
-          <div class="segment one"></div>
-          <div class="segment two"></div>
-          <div class="segment three"></div>
+          <div class="styled-separator-line">
+            <div class="segment one"></div>
+            <div class="segment two"></div>
+            <div class="segment three"></div>
+          </div>
+
+          <p class="py-5">Sit amet consectetur adipisicing elit. Iusto, aperiam dolores. Ad, sit. Qui porro blanditiis temporibus voluptatibus voluptatem quisquam eos dolore illo velit error aspernatur culpa consectetur enim incidunt voluptatum pariatur quasi omnis sequi, dicta dignissimos accusantium facere ipsum.</p>
+
+          <a class="btn" href="#">Read more</a>
+          
         </div>
 
-        <p class="py-5">Sit amet consectetur adipisicing elit. Iusto, aperiam dolores. Ad, sit. Qui porro blanditiis temporibus voluptatibus voluptatem quisquam eos dolore illo velit error aspernatur culpa consectetur enim incidunt voluptatum pariatur quasi omnis sequi, dicta dignissimos accusantium facere ipsum.</p>
-        <a class="btn" href="#">Read more</a>
-      </div>
-      <div class="swipe-controls w-50 d-flex justify-content-between py-5">
-        <h4>Facebook - Instagram - Youtube - Twitter</h4>
+        <div class="swipe-controls w-50 d-flex justify-content-between py-5">
+          <h4>Facebook - Instagram - Youtube - Twitter</h4>
 
-        <div class="selector">
-          <button @click="changeImg(0)" 
-          :class="{'active' : isClicked}"
-          class="btn active" input type="radio" name="swipe" id="0">01</button>
-          <button @click="changeImg(1)" :class="{'active' : isClicked}" 
-          class="btn" input type="radio" name="swipe" id="1">02</button>
-          <button @click="changeImg(2)" :class="{'active' : isClicked}" 
-          class="btn" input type="radio" name="swipe" id="2">03</button>
+          <div class="selector">
+            <button @click="changeImg(0)" 
+            :class="{'active' : isClicked}"
+            class="btn active" input type="radio" name="swipe" id="0">01</button>
+            <button @click="changeImg(1)" :class="{'active' : isClicked}" 
+            class="btn" input type="radio" name="swipe" id="1">02</button>
+            <button @click="changeImg(2)" :class="{'active' : isClicked}" 
+            class="btn" input type="radio" name="swipe" id="2">03</button>
+          </div>
+
         </div>
-
-      </div>
 
       </div>
     

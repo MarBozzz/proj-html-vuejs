@@ -58,12 +58,9 @@ export default {
         </nav>
       </div>
 
-      <div class="header-right">
-        <!-- <a class="btn" href="#"></a> -->
-        <!-- I button saranno sostituiti con una mixin -->
-        <!-- <button class="mb-btn btn-warning mx-3">Purchase</button> -->
-        
-        <i class="fa-solid fa-magnifying-glass px-3"></i>
+      <div class="header-right d-flex justify-content-between align-items-center">
+        <a class="btn" href="#">Purchase</a>
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
     </div>
   </header>
@@ -78,11 +75,9 @@ header {
   .upper-header {
     height: 40px;
     background-color: #3D3D3D;
+    color: #FFFFFF;
     span {
       font-size: .8rem;
-    }
-    .header-right {
-      @include button(main-button);
     }
   }
   .lower-header {
@@ -108,8 +103,14 @@ header {
       }
     }
     .header-right{
+      .btn {
+        @include button(main-button);
+        background: $scale-background-main-color
+      }
       i {
-        color: $main-color
+        color: $main-color;
+        font-size: 1rem;
+        padding: 0 2rem;
       }
     }
   }

@@ -124,9 +124,6 @@ section {
     .text-container {
       padding: 150px 0;
       font-size: .9rem;
-      h2 {
-
-      }
       p {
         padding: 50px 0;
       }

@@ -49,7 +49,7 @@ export default {
 @use '../../styles/partials/mixins' as *;
 
 section {
-  padding-top: 225px;
+  //padding-top: 225px;
   padding-bottom: 260px;
   background-color: #FFFFFF;
   .text-container {

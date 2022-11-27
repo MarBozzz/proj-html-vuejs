@@ -148,7 +148,7 @@ section {
         background: $scale-background-main-color;
         border-radius: 2px;
       } 
-    }
+      }
       p {
         padding: 35px 0;
       }

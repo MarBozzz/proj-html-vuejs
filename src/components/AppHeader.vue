@@ -11,6 +11,7 @@ export default {
       <div class="upper-header-content h-100 mb-container d-flex justify-content-between align-items-center">
 
         <div class="upper-header-content-left">
+          <a name="anchor" href="#"></a>
           <i class="fa-solid fa-phone"></i>
           <span class="px-3">(001)88451234</span>
           <span>88455438</span>
@@ -79,6 +80,10 @@ header {
     span {
       font-size: .8rem;
     }
+    i:hover {
+      transform: scale(1.1);
+      color: $main-color;
+    }
   }
   .lower-header {
     height: 105px;
@@ -97,6 +102,10 @@ header {
             a {
               text-decoration: none;
               color: #3D3D3D;
+            }
+            a:hover {
+              transform: scale(1.05);
+              color: $main-color
             }
           }
         }

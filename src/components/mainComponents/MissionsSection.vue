@@ -44,7 +44,7 @@ export default {
 
 section {
   padding-top: 210px;
-  padding-bottom: 320px;
+  padding-bottom: 420px;
   background-color: #F9F9F9;
   .images-container {
     width: 64%;

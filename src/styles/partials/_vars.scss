@@ -18,3 +18,6 @@ $scale-cards-background-main-color-reverse: linear-gradient(45deg, #00D9A6, #99E
 
 //mission photo layover 45°
 $scale-background-main-color: linear-gradient(45deg, rgba(153, 225, 94, 0.85), rgb(0, 217, 166, 0.85));
+
+// layover 45° transp
+$scale-background-main-color-transp: linear-gradient(45deg, rgb(0, 217, 166, 0.85), rgba(153, 225, 94, 0.85));

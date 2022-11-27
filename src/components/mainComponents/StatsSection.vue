@@ -30,11 +30,17 @@ export default {
 
     <div class="box right">
       <div class="text-container mb-container">
-        <h2>
+        <h2 class="pb-3">
           We <span class="hchangecolor">love</span> what<br> we do
         </h2>
-        SEPARATOR
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quia inventore, obcaecati excepturi similique optio necessitatibus beatae aliquid nostrum quisquam iusto, reiciendis corrupti neque maxime velit soluta quidem, incidunt in. Aliquid ab, quis ipsam eius numquam illo accusantium aut.</p>
+        
+        <div class="styled-separator-line">
+          <div class="segment one"></div>
+          <div class="segment two"></div>
+          <div class="segment three"></div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est quia inventore, obcaecati excepturi similique optio necessitatibus beatae aliquid nostrum quisquam iusto, reiciendis corrupti neque maxime velit soluta quidem, incidunt in. Aliquid ab, quis ipsam eius numquam illo accusantium aut eque maxime velit soluta quidem, incidunt in. Aliquid icing elit. Amet est quia.</p>
         <ul>
           <li>
             <i class="fa-solid fa-check"></i>
@@ -85,7 +91,7 @@ section {
       width: 100%;
       height: 100%;
       border-radius: 10px;
-      background-color: rgba($color: #000000, $alpha: 0.5);
+      background: $scale-background-main-color-transp;
       color: #FFFFFF;
       h2 {
         font-size: 7.5rem;
@@ -122,16 +128,40 @@ section {
     background-color: #FFFFFF;
     box-shadow: 5px 5px 50px 5px #DEDEDE;
     .text-container {
-      padding: 150px 0;
+      padding: 175px 30px;
       font-size: .9rem;
+      .styled-separator-line {
+      .segment {
+        display: inline-block;
+        height: 5px;
+      }
+      .segment.one {
+        width: 8px;
+        background: $scale-background-main-color;
+        border-radius: 2px;
+      } 
+      .segment.two {
+        width: 5px;
+      } 
+      .segment.three {
+        width: 50px;
+        background: $scale-background-main-color;
+        border-radius: 2px;
+      } 
+    }
       p {
-        padding: 50px 0;
+        padding: 35px 0;
       }
       ul {
         padding: 0;
         li {padding: .5rem 0;
           i {
             color: $main-color;
+          }
+          span {
+            font-size: .9rem;
+            font-weight: 200;
+            line-height: 1.6rem;
           }
         }
       }

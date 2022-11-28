@@ -8,6 +8,7 @@ export default {
 <template>
   <section>
     <div class="wrapper position-relative">
+
       <div class="mb-container">
         <div class="row ">
 
@@ -75,8 +76,6 @@ export default {
       <span class="text-rotated-anticlockwise">17 years of experience helping people for best solutions</span>
 
     </div>
-
-
   </section>
 </template>
 
@@ -87,7 +86,7 @@ export default {
 section {
   padding-top: 200px;
   padding-bottom: 130px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   .wrapper {
     .mb-container {
       .row {
@@ -119,8 +118,8 @@ section {
               .news-box {
                 position: relative;
                 .img-container {
-                  
                   box-shadow: 5px 5px 50px 5px #DEDEDE;
+                  overflow: hidden;
                   img {
                     border-radius: 10px;
                   }
@@ -152,11 +151,21 @@ section {
                   }
                 }
               }
+              .news-box:hover {
+                cursor: pointer;
+                .img-container {
+                  border-radius: 8px;
+                  img {
+                    transform:scale(1.05);
+                    
+                  }
+                }
+              }
             }
           }
         }
         .button {
-        padding: 120px 0;
+          padding-top: 120px;
           .btn {
             display: flex;
             justify-content: center;
@@ -169,8 +178,6 @@ section {
             border-radius: 50px;
             background: $scale-black-color;
             box-shadow: 2px 8px 20px #888888;
-            /*background: $scale-background-main-color;
-            box-shadow: 2px 2px 10px $main-color;*/
           }
           .btn:hover {
             display: flex;

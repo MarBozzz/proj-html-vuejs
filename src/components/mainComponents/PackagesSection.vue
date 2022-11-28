@@ -168,7 +168,7 @@ export default {
 
 section {
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 130px;
   background-color: #F9F9F9;
   .mb-container {
     .row {

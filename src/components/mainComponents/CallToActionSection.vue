@@ -86,6 +86,7 @@ section {
         }
         .cta-box.left {
           background: $scale-black-color-footer;
+          box-shadow: 1px 1px 30px 1px #000000;
           h5 {
             color: #AAAAAA;
           }
@@ -97,6 +98,7 @@ section {
         }
         .cta-box.right {
           background: $scale-main-color-reverse;
+          box-shadow: 5px 5px 30px $main-color;
           h5 {
             font-size: 1.1rem;
             color: #E5E3DF;
@@ -118,7 +120,7 @@ section {
               text-transform: uppercase;
               border-radius: 50px;
               background: $scale-black-color;
-              box-shadow: 2px 8px 20px #888888;
+              box-shadow: 1px 1px 30px #888888;
             }
             .btn:hover {
               display: flex;

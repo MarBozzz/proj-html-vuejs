@@ -1,14 +1,34 @@
 <script>
+
+import HeaderMenu from './headerComponents/HeaderMenu.vue';
+
 export default {
   name : 'AppHeader',
+  components : {
+    HeaderMenu
+  },
+  data(){
+    return {
+      //voci del menu
+      menuVoices : [
+        'home',
+        'about',
+        'services',
+        'showcase',
+        'blog',
+        'contact'
+      ]
+    }
+  }
 }
 </script>
 
 
 <template>
   <header>
-    <div class="upper-header">
-      <div class="upper-header-content h-100 mb-container d-flex justify-content-between align-items-center">
+    
+      <div class="upper-header">
+        <div class="upper-header-content h-100 mb-container d-flex justify-content-between align-items-center">
 
         <div class="upper-header-content-left">
           <a name="anchor" href="#"></a>
@@ -22,9 +42,9 @@ export default {
           <i class="fa-brands fa-twitter px-4"></i>
           <i class="fa-brands fa-pinterest-p"></i>
         </div>
-
       </div>
     </div>
+    
 
     <div class="lower-header mb-container d-flex justify-content-between align-items-center">
       
@@ -34,27 +54,14 @@ export default {
         </div>
       </div>
 
+      
       <div class="header-center">
+        <!-- Elementi ciclati e inviati tramite props -->
         <nav>
           <ul class="d-flex m-0">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Showcase</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            <HeaderMenu v-for="(menuVoice, index) in menuVoices" :key="index"
+            :menuVoice="menuVoice"
+            />
           </ul>
         </nav>
       </div>
@@ -92,24 +99,6 @@ header {
     font-size: .9rem;
     .logo img {
       width: 200px;
-    }
-    .header-center {
-      nav {
-        ul {
-          li {
-            padding: 1rem;
-            text-transform: uppercase;
-            a {
-              text-decoration: none;
-              color: #3D3D3D;
-            }
-            a:hover {
-              transform: scale(1.05);
-              color: $main-color
-            }
-          }
-        }
-      }
     }
     .header-right{
       .btn {
